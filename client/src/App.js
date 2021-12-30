@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 // UI Components
-import { DataGrid } from '@material-ui/data-grid';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import { DataGrid } from '@mui/x-data-grid';
+import { AppBar, Toolbar, Typography } from '@mui/material';
 
 // Images
 import LexcelonLogo from './images/LexcelonLogo.png';

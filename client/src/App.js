@@ -19,32 +19,32 @@ const TABLE_COLUMNS = [
     headerAlign: 'center'
   },
   {
-    field: 'State',
+    field: 'state',
     headerName: 'Name',
     width: 150,
     headerAlign: 'center'
   },
   {
-    field: 'Pop',
+    field: 'pop',
     headerName: 'Population',
     type: 'number',
     width: 110,
     headerAlign: 'center',
   },
   {
-    field: 'Growth',
+    field: 'growth',
     headerName: 'Growth',
     width: 125,
     headerAlign: 'center',
   },
   {
-    field: 'Pop2018',
+    field: 'pop2018',
     headerName: '2018 Population',
     width: 160,
     headerAlign: 'center',
   },
   {
-    field: 'Pop2010',
+    field: 'pop2010',
     headerName: '2010 Population',
     width: 160,
     headerAlign: 'center',
@@ -56,7 +56,7 @@ const TABLE_COLUMNS = [
     headerAlign: 'center',
   },
   {
-    field: 'Percent',
+    field: 'percent',
     headerName: 'Percent',
     width: 160,
     headerAlign: 'center',

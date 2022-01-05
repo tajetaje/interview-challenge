@@ -88,7 +88,10 @@ export default class App extends Component {
   componentDidMount() {
     // Retrieve the list of state data from the server
     api.get('/states').then((response) => {
-      this.setState({ states: response.data });
+      let states = response.data;
+
+      // Set the states state value so it can appear on the table
+      this.setState({ states }, () => this.setState({ states }));
     });
   }
 

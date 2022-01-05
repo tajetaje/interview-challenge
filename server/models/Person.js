@@ -8,6 +8,7 @@ class Person extends Model {
 // This function creates the actual model definition.
 Person.init({
   // Model attributes are defined here
+  // No need to include id for the model. That is included automatically!
   name: {
     type: DataTypes.STRING,
     allowNull: false

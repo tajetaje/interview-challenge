@@ -14,6 +14,9 @@ Person.init({
   },
   age: {
     type: DataTypes.INTEGER
+  },
+  phoneNumber: {
+    type: DataTypes.STRING
   }
 }, {
   // Other model options go here

@@ -19,7 +19,7 @@ const TABLE_COLUMNS = [
     headerAlign: 'center'
   },
   {
-    field: 'state',
+    field: 'name',
     headerName: 'Name',
     width: 150,
     headerAlign: 'center'
@@ -91,7 +91,7 @@ export default class App extends Component {
       let states = response.data;
 
       // Set the states state value so it can appear on the table
-      this.setState({ states }, () => this.setState({ states }));
+      this.setState({ states });
     });
   }
 

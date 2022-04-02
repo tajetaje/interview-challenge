@@ -60,6 +60,7 @@ const TABLE_COLUMNS = [
     headerName: 'Percent',
     width: 160,
     headerAlign: 'center',
+    valueFormatter: ({ value }) => `${(Math.round(value * 100) / 100).toFixed(2)}%`
   },
   {
     field: 'density',
@@ -100,7 +101,8 @@ export default class App extends Component {
       <>
         {/* App Bar */}
         <AppBar position='static'>
-          <Toolbar>
+          <Toolbar style={{backgroundColor: LEXCELON_GREEN}}>
+            <img src={LexcelonLogo} alt='Lexcelon Logo' style={{height: '50px'}} />
           </Toolbar>
         </AppBar>
 
@@ -114,6 +116,7 @@ export default class App extends Component {
               pageSize={TABLE_PAGE_SIZE}
               checkboxSelection
               disableSelectionOnClick
+
             />
           }
         </div>
